@@ -40,10 +40,58 @@ main{
     width: 80vw;
 }
 section{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+#name{
     background:#343535;
     border-radius:5px; 
     height: 85vh;
     margin-top:2.5vh;
-    margin-left:5px;
-    width: 30vw;
+    margin-left:10px;
+    position: relative;
+    width: 25%;
+}
+#left{
+    height: 85vh;
+    margin:2.5vh 10px;
+    position: relative;
+    width: 74%;
+}
+.chat{
+    background: #343535c7;
+    height: 25vh;
+    margin-top: 5vh;
+    position: relative;
+    width: 100%;
+    z-index: 15;
+}
+.chat .fleche{
+    background:#343535c7;
+    border-radius: 20% 20% 0% 0%;
+    color:white;
+    cursor: pointer;
+    font-size: 2em; 
+    height: 2vw;
+    margin-top:-2vw;
+    padding:0 10px;
+    position: absolute;
+    width: 2.5vw;
+}
+#container {
+    min-width: 310px;
+    max-width: 800px;
+    height: 45vh;
+    margin: 1vh auto;
+  }
+#marge{
+    height: 1vh;
+    width: 100%;
+}
+.bas{
+    margin-top:60vh;
+}
+.nop{
+    display:none;
 }
