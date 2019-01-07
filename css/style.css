@@ -16,14 +16,17 @@ header{
 header #logo{
     background : url("../img/logo.png");
     background-size: cover;
+    cursor: pointer;
     height: 250px;
     margin: 0px auto;
     transition: 0.4s;
     width: 250px;
     z-index: 10;
+
+    transform: scale(0.90);
 }
 header #logo:hover{
-    transform: scale(1.05);
+    transform: scale(0.95);
     transition: 0.4s;
 }
 main{
