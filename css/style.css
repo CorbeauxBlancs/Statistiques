@@ -1,0 +1,46 @@
+body{
+    background : url("../img/background.jpg");
+    background-size: cover;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    width: 100vw;
+}
+header{
+    position: absolute;
+    top:-3vh;
+    width: 97vw;
+    z-index: 10;
+}
+header #logo{
+    background : url("../img/logo.png");
+    background-size: cover;
+    height: 250px;
+    margin: 0px auto;
+    transition: 0.4s;
+    width: 250px;
+    z-index: 10;
+}
+header #logo:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+main{
+    background : url("../img/character.jpg");
+    background-size: cover;
+    border:15px rgb(218, 218, 218) solid;
+    border-radius:5px; 
+    height: 90vh;
+    margin: 5vh auto;
+    position: relative;
+    width: 80vw;
+}
+section{
+    background:#343535;
+    border-radius:5px; 
+    height: 85vh;
+    margin-top:2.5vh;
+    margin-left:5px;
+    width: 30vw;
+}
