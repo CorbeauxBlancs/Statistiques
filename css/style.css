@@ -1,6 +1,8 @@
 body{
     background : url("../img/background.jpg");
     background-size: cover;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
     height: 100vh;
     margin: 0px;
     overflow: hidden;
@@ -8,10 +10,11 @@ body{
     width: 100vw;
 }
 header{
+    margin:0 40vw;
     position: absolute;
     top:-3vh;
-    width: 97vw;
-    z-index: 10;
+    width: 20vw;
+    z-index: 100;
 }
 header #logo{
     background : url("../img/logo.png");
@@ -21,7 +24,7 @@ header #logo{
     margin: 0px auto;
     transition: 0.4s;
     width: 150px;
-    z-index: 10;
+    z-index: 100;
 
     transform: scale(0.90);
 }
@@ -32,10 +35,11 @@ header #logo:hover{
 main{
     background : url("../img/character.jpg");
     background-size: cover;
-    border:25px rgb(218, 218, 218) solid;
+    border:20px rgb(235, 235, 235) solid;
     border-radius:5px; 
+    box-shadow: 6px 6px 0px rgb(180, 165, 142); 
     height: 90vh;
-    margin: 5vh auto;
+    margin: 3vh auto;
     position: relative;
     width: 80vw;
 }
@@ -48,11 +52,37 @@ section{
     background:#343535;
     border-radius:5px; 
     height: 85vh;
+    margin : 0px; padding : 0px; /* reset ul position */
     margin-top:2.5vh;
     margin-left:10px;
+    overflow: hidden;
     position: relative;
-    width: 25%;
+    width: 23%;
+    z-index: 15;
+    text-align: middle;
 }
+li{
+    cursor: pointer;
+    font-size: 16px;
+    list-style: none;
+    background:#3B3D41;
+    padding:3px 0;
+    text-align: middle;
+}
+/* li:active{
+    color:red;
+} */
+li:nth-child(odd){
+    background:#46484D;
+}
+li img{
+    width: 18px; height: 22px;
+    margin:2px;
+}
+.selected{
+    background:#49546B!important;
+}
+
 #left{
     height: 85vh;
     margin:2.5vh 10px;
@@ -66,6 +96,8 @@ section{
     position: relative;
     width: 100%;
     z-index: 15;
+
+    transition: 0.4s;
 }
 .chat .fleche{
     background:#343535c7;
@@ -79,19 +111,128 @@ section{
     position: absolute;
     width: 2.5vw;
 }
-#container {
-    min-width: 310px;
-    max-width: 800px;
+.resume{
+    display: flex;
+    margin: -1vh 4vw;
+    width: 90%;
+}
+.resume h2{
+    color:#F39514;
+}
+.week{
+    width: 50%;
+}
+.container {
+    width: 90%;
     height: 45vh;
-    margin: 1vh auto;
+    margin: 1vh 4vw;
   }
 #marge{
     height: 1vh;
     width: 100%;
 }
+.select-list{
+    align-content: space-around;
+    display:flex;
+    width: 90%;
+    margin: 1vh 4vw;
+}
+.select{
+    background:#F39514;
+    border:#75400B solid 1px;
+    border-radius: 10% / 100%;
+    color:white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+    padding:5px 50px;
+    text-shadow: #75400B 5px 0 10px;
+    transition: 0.4s;
+}
+.select:before {
+    border-radius: 5% / 50%;
+}
+.select:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.index{
+    background: url('../img/book-cover.svg');
+    background-size:cover; 
+    /* border: #F39514 solid 15px;
+    border-radius: 100%;
+    box-shadow: 5px 5px #061106 inset; */
+    cursor: pointer;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    transition: 0.4s;
+    width: 100px ;
+    z-index: 15;
+}
+.index:hover{
+    transform: scale(1.10);
+    transition: 0.4s;
+}
+.dico{
+    background: #F1DDBD;
+    box-shadow: 4px 4px 0px rgb(180, 165, 142); 
+    border-radius: 20px;
+    height: 80%;
+    left:10%;
+    position: absolute;
+    width: 80%;
+    top:10%;
+    transition: 0.4s;
+    z-index:20;
+}
+.little{
+    height: 35px;
+    transition: 0.4s;
+    width: 35px;
+}
+.black{
+    background:#46484D;
+}
 .bas{
     margin-top:60vh;
+    transition: 0.4s;
 }
 .nop{
     display:none;
 }
+.nop2{
+    height: 20%;
+    left:40%;
+    width: 20%;
+    top:40%;
+    transition: 0.4s;
+}
+.exit{
+    background:url("../img/cross.png");
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    transition:0.4s;
+    top:-3vh;
+    right:-3vh
+}
+.exit:hover{
+    transform: scale(1.05);
+    transition:0.4s
+}
+.index-title{
+    background:#5A837E;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px #476662; 
+    font-size: 2.5em;
+    width: 40%;
+    height: 7vh;
+    margin: 0px auto;
+    margin-top:-1vh;
+    text-align: center;
+}
+

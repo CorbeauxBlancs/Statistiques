@@ -6,22 +6,53 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="icon" href="img/favicon.ico" />
         <title>Statistique Corbeaux Blancs</title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     </head>
     <body>
         <header><div id="logo"></div></header>
         <main>
             <section>
-                <div id="name">
+                <ul id="name">
+                    <li class="team selected"><img src="img/team.png">Equipe</li>
 
-                </div>
+                </ul>
                 <div id="left">
                     <div class="chat bas">
                         <div class="arrows-up fleche">▲</div>
                         <div class="arrows-down fleche nop">▼</div>
                         <div id="marge"></div>
-                        <div id="container" class="nop"></div>
+                        <div id="xp-container" class="nop container"></div>
+                        <div id="stat-container" class="nop container"></div>
+                        <div id="hc-container" class="nop container"></div>
+                        <article class="select-list nop">
+                            <div class="select Experience">Level</div>
+                            <div class="select Stats">Stats</div>
+                            <div class="select HeroCon">HéroCon</div>
+                            <div class="time "> </div>
+                        </article>
+                        <div class="resume">
+                            <div class="week actual">
+                                <h2>Semaine actuelle</h2>
+                                <h4 class="lvl">Niveau moyen : </h4>
+                                <h4 class="stats">Stat moyennes : </h4>
+                                <h4 class="ratio" >Ratio moyen   : </h4>
+                            </div>
+                            <div class="week last">
+                                <h2>Semaine passée</h2>
+                                <h4 class="lvl">Niveau moyen : </h4>
+                                <h4 class="stats">Stat moyennes : </h4>
+                                <h4 class="ratio">Ratio moyen   : </h4>
+                            </div>
+                        </div>
                     </div>                    
+                </div>
+                <div class="index"></div>
+                <div class="dico nop nop2">
+                    <div class="index-title">Astuces </div>
+                    <div class="exit "></div>
+                    <div id="cut-diamond"></div>
                 </div>
             </section>
         </main>
